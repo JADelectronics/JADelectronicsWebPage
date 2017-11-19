@@ -18,10 +18,10 @@ class Header extends Component {
                         <Link to="/"> Home</Link>
                     </li>
                     <li>
-                        <Link to="/Products"> Products</Link>
+                        <Link to="/Brain"> BrainPage</Link>
                     </li>
                     <li className="last">
-                        <a href="#">Contacts</a>    
+                        <Link to="/Body"> BodyPage</Link>
                     </li>
                 </ul>
             </nav>

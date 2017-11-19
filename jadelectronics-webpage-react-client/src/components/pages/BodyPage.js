@@ -1,14 +1,17 @@
 //external imports
 import React, { Component } from 'react';
+import {
+    Link
+  } from 'react-router-dom';
 
-class HomePage extends Component {
+class BodyPage extends Component {
   render() {
     return (
         <div className="container-fluid">
-            homepage content would go here
+            Body page goes here
         </div>
     );
   }
 }
 
-export default HomePage;
+export default BodyPage;
