@@ -38,3 +38,6 @@ Thumbs.db
 
 # JS specific files#
 node_modules
+
+#IDE Files#
+.idea
