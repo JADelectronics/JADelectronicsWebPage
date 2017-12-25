@@ -5,6 +5,7 @@ var nano = require('nano')('http://localhost:5984');
 var users_db = nano.db.use('users');
 
 router.get('/', function(req, res, next) {
+    console.log('server edit test')
     users_db.list({include_docs: true}, function(err, body) {
         if (!err) {
             body.rows.forEach(function(doc) {

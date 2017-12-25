@@ -1,36 +1,34 @@
 //external imports
 import React from 'react';
 
+//internal components
+import Header from '../headerComponents/header'
+import Footer from '../footerComponents/footer'
+import HomePageDescriptionComponent from "../buildingBlocks/homePage/HomePageDescriptionComponent";
+import EnterPageComponentContainer from "../buildingBlocks/homePage/EnterPageComponentContainer";
+
 class HomePage extends React.Component {
 
     constructor(){
         super();
         this.state = {
-            users: []
+
         };
 
-    }
-
-    componentDidMount() {
-        let users = this.state.users;
-        fetch('/users')
-            .then((resp) => resp.json())
-            .then((data) => {
-                data.rows.forEach(function(doc) {
-                    users.push(doc.doc);
-                });
-                this.setState({users})
-                console.log(users)
-            });
     }
 
   render() {
       return (
         <div className="container-fluid">
-           <h1>This is the home page</h1>
-            {this.state.users.map(user =>
-                <div key={user._id}>{user.username}</div>
-            )}
+            <Header/>
+            <HomePageDescriptionComponent
+                description={"Text will go here"}
+            />
+            <EnterPageComponentContainer
+                Component1={"test"}
+                Component2={"test"}
+            />
+            <Footer/>
         </div>
     );
   }

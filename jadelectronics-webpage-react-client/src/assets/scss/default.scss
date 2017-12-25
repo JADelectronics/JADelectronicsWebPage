@@ -6,7 +6,85 @@ header{
     width: 100%;
     background: $black;
     color: $white;
-    height: 100px;
+    height: 150px;
+
+    .homelink{
+        position: absolute;
+        top: 10%;
+        left: 15px;
+
+        a{
+            font-size: 19px;
+            line-height: normal;
+            color: $white;
+
+            &:hover{
+                color: $red;
+                @include transition(.4s ease-in-out);
+            }
+        }
+    }
+
+    .logo_line_1{
+        font-size: 45px;
+        position: absolute;
+        left: 35%;
+        top: 20px;
+        line-height: 100%;
+    }
+
+    .logo_line_2{
+        font-size: 45px;
+        position: absolute;
+        right: 35%;
+        bottom: 20px;
+        line-height: 100%;
+    }
+
+    nav,
+    nav ul,
+    nav ul li{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        position: absolute;
+        top: 10%;
+        right: 15px;
+
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+            @include transition(.4s ease-in-out);
+            cursor: pointer;
+
+            &:hover{
+                color: $red;
+                @include transition(.4s ease-in-out);
+            }
+
+            &.last{
+                margin: 0;
+            }
+
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: $white;
+            }
+
+        }
+    }
+
+}
+
+footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
 
     .logo{
         position: absolute;
