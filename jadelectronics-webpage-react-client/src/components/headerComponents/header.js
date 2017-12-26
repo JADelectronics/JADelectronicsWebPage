@@ -24,6 +24,10 @@ class Header extends React.Component {
         this.closeContactModal = this.closeContactModal.bind(this);
         this.openSocialMediaModal = this.openSocialMediaModal.bind(this);
         this.closeSocialMediaModal = this.closeSocialMediaModal.bind(this);
+        this.openResumeModal = this.openResumeModal.bind(this);
+        this.closeResumeModal = this.closeResumeModal.bind(this);
+        this.openGitModal = this.openGitModal.bind(this);
+        this.closeGitModal = this.closeGitModal.bind(this);
     }
 
     closeContactModal() {
@@ -34,6 +38,14 @@ class Header extends React.Component {
         this.setState({showSocialMediaModal: false});
     }
 
+    closeResumeModal(){
+        this.setState({showResumeModal: false});
+    }
+
+    closeGitModal(){
+        this.setState({showGitModal: false});
+    }
+
     openContactModal() {
         this.setState({ showContactModal: true });
     }
@@ -42,10 +54,17 @@ class Header extends React.Component {
         this.setState({showSocialMediaModal: true})
     }
 
+    openResumeModal(){
+        this.setState({showResumeModal: true});
+    }
+
+    openGitModal(){
+        this.setState({showGitModal: true});
+    }
+
     render() {
         return (
             <header>
-
                 <div className={"homelink"}>
                     <Link to="/Home"> Home</Link>
                 </div>
@@ -59,11 +78,11 @@ class Header extends React.Component {
 
                 <nav>
                     <ul>
-                        <li className={"first"}>
-                            <Link to={"/Resume"}> Resume </Link>
+                        <li className={"first"} onClick={this.openResumeModal}>
+                            Resume
                         </li>
-                        <li className={"last"}>
-                            <Link to={"/GitRepos"}> Git Repos </Link>
+                        <li className={"last"} onClick={this.openGitModal}>
+                            Git Repos
                         </li>
                     </ul>
                     <ul>
@@ -123,6 +142,35 @@ class Header extends React.Component {
                         <Button onClick={this.closeSocialMediaModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
+
+
+                <Modal show={this.state.showResumeModal} onHide={this.closeResumeModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Resume</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.closeResumeModal}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+                <Modal show={this.state.showGitModal} onHide={this.closeGitModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Git Repos</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.closeGitModal}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+
+
+
+
+
             </header>
         );
     }

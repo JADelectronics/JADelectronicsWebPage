@@ -81,16 +81,24 @@ header{
 }
 
 footer {
-    position:absolute;
-    left:0;
+    position:fixed;
     bottom:0;
-    right:0;
+    display: block;
+    width: 100%;
+    background: $black;
+    color: $white;
+    height: 120px;
+
+    .img-center {
+        text-align: center;
+        @include translateY(80%);    }
 
     .logo{
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        @include translateY(-50%);
+
+        text-align: center;
+
+
+        @include translateY(60%);
     }
 
     nav,
@@ -98,27 +106,22 @@ footer {
     nav ul li{
         margin: 0;
         padding: 0;
+
     }
 
     nav{
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        @include translateY(-50%);
+        @include translateY(200%);
+        ul{
+            text-align: center;
+            height: 100%;
 
+        }
         ul li{
-            list-style-type: none;
-            display: inline-block;
-            margin-right: 20px;
-
-            &.last{
-                margin: 0;
-            }
+            display:inline;
+            padding:10px;
 
             a{
-                font-size: 19px;
-                line-height: normal;
-                color: $white;
+                display:inline-block;
             }
         }
     }
