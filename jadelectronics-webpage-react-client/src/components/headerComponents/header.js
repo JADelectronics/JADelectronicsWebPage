@@ -17,7 +17,9 @@ class Header extends React.Component {
 
         this.state = {
             showContactModal: false,
-            showSocialMediaModal: false
+            showSocialMediaModal: false,
+            showResumeModal: false,
+            showGitModal: false
         };
 
         this.openContactModal = this.openContactModal.bind(this);

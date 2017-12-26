@@ -119,6 +119,12 @@ footer {
         ul li{
             display:inline;
             padding:10px;
+            cursor: pointer;
+
+            &:hover{
+                color: $red;
+                @include transition(.4s ease-in-out);
+            }
 
             a{
                 display:inline-block;
