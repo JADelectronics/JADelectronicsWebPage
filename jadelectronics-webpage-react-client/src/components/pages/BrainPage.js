@@ -11,7 +11,7 @@ class BrainPage extends Component {
         <div>
             <Header/>
             <div className="under-construction">
-                Brain page is currently under construction test
+                Brain page is currently under construction
             </div>
             <Footer/>
         </div>
