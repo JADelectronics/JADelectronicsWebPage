@@ -82,13 +82,13 @@ header{
 }
 
 footer {
-    position: relative;
+    position: fixed;
     bottom:0;
-    display: block;
+    height: 120px;
+
     width: 100%;
     background: $black;
     color: $white;
-    height: 120px;
 
     .img-center {
         text-align: center;
@@ -135,10 +135,12 @@ footer {
 }
 
 body{
-    position: relative;
+    min-height:100%;
+    position:relative;
+    padding-bottom:120px;
+
     width: 100%;
-    margin: 0;
-    background: $red;
+    background: $black;
     color: $white;
 }
 
@@ -184,25 +186,40 @@ body{
 
     vertical-align: middle;
 
-    margin-left: 150px;
-    margin-right:150px;
+    margin-left: 130px;
+    margin-right:130px;
 }
 .enter-page-component-title{
     position: relative;
 
-    height: 100px;
-    line-height: 100px;
+    height: 70px;
+    line-height: 70px;
     text-align: center;
     vertical-align: middle;
 
+    font-size: 45px;
+
     background-color: orange;
+
+    a{
+        font-size: 45px;
+        text-decoration: none;
+        color: white;
+
+
+        &:hover{
+            color: $red;
+            @include transition(.4s ease-in-out);
+        }
+    }
+
 }
 
 .enter-page-component-image{
     position: relative;
 
-    height: 100px;
-    line-height: 100px;
+    height: 130px;
+    line-height: 130px;
     text-align: center;
     vertical-align: middle;
 
@@ -217,4 +234,12 @@ body{
     vertical-align: middle;
 
     background-color: greenyellow;
+}
+.under-construction{
+    position: relative;
+
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    vertical-align: middle;
 }
