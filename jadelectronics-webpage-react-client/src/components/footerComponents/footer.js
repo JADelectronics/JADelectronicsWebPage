@@ -55,7 +55,7 @@ class Footer extends React.Component {
         return (
             <footer>
                 <div className={'logo'}>
-                    logo line one logo line two
+                    So the ____ what, do it anyway
 
                 </div>
                 <div className={"img-center"}>

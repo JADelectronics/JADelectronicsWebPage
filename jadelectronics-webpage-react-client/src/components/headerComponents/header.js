@@ -72,10 +72,10 @@ class Header extends React.Component {
                 </div>
 
                 <div className="logo_line_1">
-                    Logo line one
+                    So the ____ what
                 </div>
                 <div className="logo_line_2">
-                    Logo line two
+                    Do it anyway
                 </div>
 
                 <nav>

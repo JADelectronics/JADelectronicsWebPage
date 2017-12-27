@@ -181,13 +181,13 @@ body{
 .enter-page-component{
     position: relative;
     height: 300px;
-    width: 250px;
+    width: 400px;
     display: inline-block;
 
     vertical-align: middle;
 
-    margin-left: 130px;
-    margin-right:130px;
+    margin-left: 100px;
+    margin-right:100px;
 }
 .enter-page-component-title{
     position: relative;
@@ -199,13 +199,12 @@ body{
 
     font-size: 45px;
 
-    background-color: orange;
+    background-color: black;
 
     a{
         font-size: 45px;
         text-decoration: none;
         color: white;
-
 
         &:hover{
             color: $red;
@@ -223,7 +222,7 @@ body{
     text-align: center;
     vertical-align: middle;
 
-    background-color: darkred;
+    background-color: black;
 }
 .enter-page-component-description{
     position: relative;
@@ -233,7 +232,7 @@ body{
     text-align: center;
     vertical-align: middle;
 
-    background-color: greenyellow;
+    background-color: black;
 }
 .under-construction{
     position: relative;
@@ -242,4 +241,6 @@ body{
     line-height: 200px;
     text-align: center;
     vertical-align: middle;
+
+    background-color: black;
 }
