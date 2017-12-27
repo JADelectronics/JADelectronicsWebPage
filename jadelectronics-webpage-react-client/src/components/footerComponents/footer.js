@@ -81,7 +81,7 @@ class Footer extends React.Component {
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        some data to do the thing
+                        body text will go here.
                     </Modal.Body>
                     <Modal.Footer>
                         <Button onClick={this.closeResumeModal}>Close</Button>

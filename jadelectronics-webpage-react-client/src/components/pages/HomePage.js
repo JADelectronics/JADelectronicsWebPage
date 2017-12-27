@@ -19,19 +19,13 @@ class HomePage extends React.Component {
 
   render() {
       return (
-        <div className="container-fluid">
-            <Header/>
-            <HomePageDescriptionComponent
-                description={"Text will go here"}
-            />
-            <EnterPageComponentContainer
-                Component1={"test"}
-                Component2={"test"}
-            />
-            <Footer/>
-        </div>
+          <div>
+              <Header/>
+              <HomePageDescriptionComponent/>
+              <EnterPageComponentContainer/>
+              <Footer/>
+          </div>
     );
   }
-
 }
 export default HomePage;

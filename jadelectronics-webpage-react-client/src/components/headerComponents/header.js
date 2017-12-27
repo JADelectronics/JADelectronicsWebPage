@@ -98,8 +98,8 @@ class Header extends React.Component {
                     </ul>
                 </nav>
 
-                <Modal show={this.state.showContactModal} onHide={this.closeContactModal}>
-                    <Modal.Header closeButton>
+                <Modal show={this.state.showContactModal} onHide={this.closeContactModal} >
+                    <Modal.Header closeButton className={"contact-modal"}>
                         <Modal.Title>Contact Information</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>

@@ -4,9 +4,10 @@ header{
     position: relative;
     display: block;
     width: 100%;
+    height: 150px;
+    margin: 0;
     background: $black;
     color: $white;
-    height: 150px;
 
     .homelink{
         position: absolute;
@@ -81,7 +82,7 @@ header{
 }
 
 footer {
-    position:fixed;
+    position: relative;
     bottom:0;
     display: block;
     width: 100%;
@@ -110,7 +111,7 @@ footer {
     }
 
     nav{
-        @include translateY(200%);
+        @include translateY(180%);
         ul{
             text-align: center;
             height: 100%;
@@ -133,3 +134,87 @@ footer {
     }
 }
 
+body{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background: $red;
+    color: $white;
+}
+
+.contact-modal{
+    background: $black;
+    color: $white;
+}
+
+.home-page-desc{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+    background: blue;
+    color: $white;
+}
+
+.enter-page-container{
+    position: relative;
+    overflow: auto;
+
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background: purple;
+    color: $white;
+}
+
+.enter-page-component{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-left: 150px;
+    margin-right:150px;
+}
+.enter-page-component-title{
+    position: relative;
+
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: orange;
+}
+
+.enter-page-component-image{
+    position: relative;
+
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: darkred;
+}
+.enter-page-component-description{
+    position: relative;
+
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: greenyellow;
+}
