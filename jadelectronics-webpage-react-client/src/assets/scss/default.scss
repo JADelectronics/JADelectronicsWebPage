@@ -84,22 +84,24 @@ header{
 footer {
     position: fixed;
     bottom:0;
-    height: 120px;
+    height: 150px;
 
     width: 100%;
     background: $black;
     color: $white;
 
     .img-center {
-        text-align: center;
-        @include translateY(80%);    }
+        display: block;
+        margin: 0 auto;
+        @include translateY(15%);
+    }
 
     .logo{
 
         text-align: center;
 
 
-        @include translateY(60%);
+        @include translateY(50%);
     }
 
     nav,
@@ -111,7 +113,7 @@ footer {
     }
 
     nav{
-        @include translateY(180%);
+        @include translateY(100%);
         ul{
             text-align: center;
             height: 100%;

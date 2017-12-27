@@ -59,7 +59,7 @@ class Footer extends React.Component {
 
                 </div>
                 <div className={"img-center"}>
-                    <img src="file:///Users/jadaigle/hiveMind/personal/hobbies/software/jadElectronicArtsCode/public/JADelectronicsWebPage/jadelectronics-webpage-react-client/src/assets/dragon.png" className={"img-center"}></img>
+                    <img src="http://localhost:3001/images/getLogoThumbnail" className={"img-center"}></img>
                 </div>
 
                 <nav>
