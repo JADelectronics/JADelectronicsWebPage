@@ -30,6 +30,8 @@ class Header extends React.Component {
         this.closeResumeModal = this.closeResumeModal.bind(this);
         this.openGitModal = this.openGitModal.bind(this);
         this.closeGitModal = this.closeGitModal.bind(this);
+        this.openAboutMeModal = this.openAboutMeModal.bind(this);
+        this.closeAboutMeModal = this.closeAboutMeModal.bind(this);
     }
 
     closeContactModal() {
@@ -48,12 +50,16 @@ class Header extends React.Component {
         this.setState({showGitModal: false});
     }
 
+    closeAboutMeModal(){
+        this.setState({showAboutMeModal: false});
+    }
+
     openContactModal() {
         this.setState({ showContactModal: true });
     }
 
     openSocialMediaModal(){
-        this.setState({showSocialMediaModal: true})
+        this.setState({showSocialMediaModal: true});
     }
 
     openResumeModal(){
@@ -62,6 +68,10 @@ class Header extends React.Component {
 
     openGitModal(){
         this.setState({showGitModal: true});
+    }
+
+    openAboutMeModal(){
+        this.setState({showAboutMeModal: true});
     }
 
     render() {
@@ -80,16 +90,19 @@ class Header extends React.Component {
 
                 <nav>
                     <ul>
+                        <li className={"first"} onClick={this.openAboutMeModal}>
+                            About Me
+                        </li>
                         <li className={"first"} onClick={this.openResumeModal}>
                             Resume
                         </li>
-                        <li className={"last"} onClick={this.openGitModal}>
-                            Git Repos
+                        <li className={"last"} onClick={this.openSocialMediaModal}>
+                            Contact Information
                         </li>
                     </ul>
                     <ul>
-                        <li className="first" onClick={this.openContactModal}>
-                            Contact Information
+                        <li className="first" onClick={this.openGitModal}>
+                            Git Repos
 
                         </li>
                         <li className="last" onClick={this.openSocialMediaModal}>
@@ -171,10 +184,18 @@ class Header extends React.Component {
                     </Modal.Footer>
                 </Modal>
 
-
-
-
-
+                <Modal show={this.state.showAboutMeModal} onHide={this.closeAboutMeModal}>
+                    <Modal.Header closeButton className={"about-me-modal-header"}>
+                        <Modal.Title>About Me</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body className={"about-me-modal-body"}>
+                        <p className={"text-right"}>put a little bio here</p>
+                        <img src="http://localhost:3001/images/getCatThumbnail" className={"img-left"}></img>
+                    </Modal.Body>
+                    <Modal.Footer className={"about-me-modal-footer"}>
+                        <Button onClick={this.closeAboutMeModal}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
             </header>
         );
     }
