@@ -118,19 +118,27 @@ footer {
             text-align: center;
             height: 100%;
 
-        }
-        ul li{
-            display:inline;
-            padding:10px;
-            cursor: pointer;
+            li{
+                display:inline;
+                padding:10px;
+                cursor: pointer;
 
-            &:hover{
-                color: $red;
-                @include transition(.4s ease-in-out);
-            }
+                &:hover{
+                    color: $red;
+                    text-decoration: none;
+                    @include transition(.4s ease-in-out);
+                }
 
-            a{
-                display:inline-block;
+                a{
+                    display:inline-block;
+                    color: $white;
+                    text-decoration: none;
+                    &:hover{
+                        color: $red;
+                        text-decoration: none;
+                        @include transition(.4s ease-in-out);
+                    }
+                }
             }
         }
     }
@@ -146,9 +154,171 @@ body{
     color: $white;
 }
 
-.contact-modal{
-    background: $black;
+.contact-modal-header{
+    background: darkred;
+    text-align: center;
     color: $white;
+}
+.contact-modal-body{
+    background: darkred;
+    text-align: center;
+    ul{
+        text-align: center;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: $white;
+                text-decoration: none;
+
+                &:hover{
+                    color: $red;
+                    @include transition(.4s ease-in-out);
+                }
+            }
+        }
+    }
+}
+.contact-modal-footer{
+    background: darkred;
+    text-align: center;
+
+}
+
+.resume-modal-header{
+    background: darkred;
+    text-align: center;
+    color: $white;
+}
+.resume-modal-body{
+    background: darkred;
+    text-align: center;
+    ul{
+        text-align: center;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: $white;
+                text-decoration: none;
+
+                &:hover{
+                    color: $red;
+                    @include transition(.4s ease-in-out);
+                }
+            }
+        }
+    }
+}
+.resume-modal-footer{
+    background: darkred;
+    text-align: center;
+}
+
+.git-modal-header{
+    background: darkred;
+    text-align: center;
+    color: $white;
+}
+.git-modal-body{
+    background: darkred;
+    text-align: center;
+
+    a{
+        font-size: 19px;
+        line-height: normal;
+        color: black;
+        text-decoration: none;
+
+        &:hover{
+            color: $red;
+            @include transition(.4s ease-in-out);
+        }
+    }
+}
+.git-modal-footer{
+    background: darkred;
+    text-align: center;
+}
+
+.about-me-modal-header{
+    background: darkred;
+    text-align: center;
+    color: $white;
+}
+.about-me-modal-body{
+    background: darkred;
+    text-align: center;
+
+    a{
+        font-size: 19px;
+        line-height: normal;
+        color: black;
+        text-decoration: none;
+
+        &:hover{
+            color: $red;
+            @include transition(.4s ease-in-out);
+        }
+    }
+}
+.about-me-modal-footer{
+    background: darkred;
+    text-align: center;
+}
+
+.social-media-modal-header{
+    background: darkred;
+    text-align: center;
+    color: $white;
+}
+.social-media-modal-body{
+    background: darkred;
+    text-align: center;
+    ul{
+        text-align: center;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: black;
+                text-decoration: none;
+
+                &:hover{
+                    color: $red;
+                    @include transition(.4s ease-in-out);
+                }
+            }
+        }
+    }
+}
+.social-media-modal-footer{
+    background: darkred;
+    text-align: center;
 }
 
 .home-page-desc{
@@ -161,7 +331,7 @@ body{
     display: inline-block;
     vertical-align: middle;
 
-    background: blue;
+    background: black;
     color: $white;
 }
 
@@ -176,7 +346,7 @@ body{
     text-align: center;
     vertical-align: middle;
 
-    background: purple;
+    background: black;
     color: $white;
 }
 

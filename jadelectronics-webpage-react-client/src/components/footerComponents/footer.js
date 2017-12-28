@@ -55,7 +55,7 @@ class Footer extends React.Component {
         return (
             <footer>
                 <div className={'logo'}>
-                    So the ____ what, do it anyway
+                    So what ... do it anyway
 
                 </div>
                 <div className={"img-center"}>
@@ -70,32 +70,32 @@ class Footer extends React.Component {
                         <li onClick={this.openAboutMeModal}>
                             About Me
                         </li>
-                        <li className={'last'} onClick={this.openYouTubeModal}>
-                            You Tube
+                        <li className={'last'}>
+                            <a href="https://www.youtube.com/channel/UCxltDhD1niv4O0si88DafsA">YouTube</a>
                         </li>
                     </ul>
                 </nav>
 
                 <Modal show={this.state.showResumeModal} onHide={this.closeResumeModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className={"resume-modal-header"}>
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        body text will go here.
+                    <Modal.Body className={"resume-modal-body"}>
+                        <embed src="http://localhost:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"resume-modal-footer"}>
                         <Button onClick={this.closeResumeModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
 
                 <Modal show={this.state.showAboutMeModal} onHide={this.closeAboutMeModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className={"about-me-modal-header"}>
                         <Modal.Title>About Me</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-
+                    <Modal.Body className={"about-me-modal-body"}>
+                        <p>put a little bio here</p>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"about-me-modal-footer"}>
                         <Button onClick={this.closeAboutMeModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>

@@ -72,10 +72,10 @@ class Header extends React.Component {
                 </div>
 
                 <div className="logo_line_1">
-                    So the ____ what
+                    So what...
                 </div>
                 <div className="logo_line_2">
-                    Do it anyway
+                    ...Do it anyway
                 </div>
 
                 <nav>
@@ -98,73 +98,75 @@ class Header extends React.Component {
                     </ul>
                 </nav>
 
-                <Modal show={this.state.showContactModal} onHide={this.closeContactModal} >
-                    <Modal.Header closeButton className={"contact-modal"}>
+                <Modal show={this.state.showContactModal} onHide={this.closeContactModal}>
+                    <Modal.Header closeButton className={"contact-modal-header"}>
                         <Modal.Title>Contact Information</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body className={"contact-modal-body"}>
                         <ul>
                             <li>
-                                Cell Phone: 281-904-0410
+                                Cell Phone ----- 281-904-0410
                             </li>
                             <li>
-                                Email: Mr.JADaigle@gmail.com
+                                Email ----- Mr.JADaigle@gmail.com
                             </li>
                         </ul>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"contact-modal-footer"}>
                         <Button onClick={this.closeContactModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
 
                 <Modal show={this.state.showSocialMediaModal} onHide={this.closeSocialMediaModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className={"social-media-modal-header"}>
                         <Modal.Title>Social Media</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body className={"social-media-modal-body"}>
                         <ul>
                             <li>
-                                Facebook:
+                                Facebook: <a href="https://www.facebook.com/jacob.daigle.79">JAD's Facebook</a>
                             </li>
                             <li>
-                                Instagram:
+                                Instagram: <a href="https://www.instagram.com/jadaigle/">JAD's Instagram</a>
                             </li>
                             <li>
-                                Snap Chat:
+                                Snap Chat: <a href="https://www.snapchat.com/add/pc-projectiles">JAD's Snap Chat</a>
                             </li>
                             <li>
-                                You Tube:
+                                You Tube: <a href="https://www.youtube.com/channel/UCxltDhD1niv4O0si88DafsA">JAD's YouTube</a>
                             </li>
                             <li>
-                                Linked In:
+                                Linked In: <a href="https://www.linkedin.com/in/jacob-daigle-4164b179/">JAD's Linked In</a>
                             </li>
                         </ul>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"social-media-modal-footer"}>
                         <Button onClick={this.closeSocialMediaModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
 
 
                 <Modal show={this.state.showResumeModal} onHide={this.closeResumeModal}>
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className={"resume-modal-header"}>
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-
+                    <Modal.Body className={"resume-modal-body"}>
+                        <embed src="http://localhost:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"resume-modal-footer"}>
                         <Button onClick={this.closeResumeModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
-                <Modal show={this.state.showGitModal} onHide={this.closeGitModal}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Git Repos</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
 
+                <Modal show={this.state.showGitModal} onHide={this.closeGitModal}>
+                    <Modal.Header closeButton className={"git-modal-header"}>
+                        <Modal.Title>Git Repositories</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body className={"git-modal-body"}>
+                        <p>Most of the code I have written lives in the private repos of my previous employers, hover in the event you would like to see some of the public work I have done in my free time, please click the git link below. If you are interested in some of the work I have on my private git server, please don’t hesitate to reach out.  </p>
+                        <a href="https://github.com/JADelectronics">Public Git Repos</a>
                     </Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Footer className={"git-modal-footer"}>
                         <Button onClick={this.closeGitModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
