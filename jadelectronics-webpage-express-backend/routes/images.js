@@ -17,4 +17,8 @@ router.get('/getBodyThumbnail', function(req, res, next) {
     res.sendFile(path.resolve(__dirname + '/../public/images/dragonBody.png'));
 });
 
+router.get('/getCatThumbnail', function(req, res, next) {
+    res.sendFile(path.resolve(__dirname + '/../public/images/codingWithCat.jpg'));
+});
+
 module.exports = router;

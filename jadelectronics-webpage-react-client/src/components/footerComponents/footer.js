@@ -93,7 +93,8 @@ class Footer extends React.Component {
                         <Modal.Title>About Me</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className={"about-me-modal-body"}>
-                        <p>put a little bio here</p>
+                        <p className={"text-right"}>put a little bio here</p>
+                        <img src="http://localhost:3001/images/getCatThumbnail" className={"img-left"}></img>
                     </Modal.Body>
                     <Modal.Footer className={"about-me-modal-footer"}>
                         <Button onClick={this.closeAboutMeModal}>Close</Button>

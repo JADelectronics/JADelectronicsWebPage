@@ -265,7 +265,15 @@ body{
 .about-me-modal-body{
     background: darkred;
     text-align: center;
+    height: 350px;
 
+  .img-left{
+    float: left;
+  }
+
+  .text-right{
+    float:right;
+  }
     a{
         font-size: 19px;
         line-height: normal;
