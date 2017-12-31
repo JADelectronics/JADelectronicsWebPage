@@ -96,7 +96,7 @@ class Header extends React.Component {
                         <li className={"first"} onClick={this.openResumeModal}>
                             Resume
                         </li>
-                        <li className={"last"} onClick={this.openSocialMediaModal}>
+                        <li className={"last"} onClick={this.openContactModal}>
                             Contact Information
                         </li>
                     </ul>
