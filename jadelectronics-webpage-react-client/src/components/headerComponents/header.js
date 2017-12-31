@@ -78,7 +78,7 @@ class Header extends React.Component {
         return (
             <header>
                 <div className={"homelink"}>
-                    <Link to="/Home"> Home</Link>
+                    <Link to="/"> Home</Link>
                 </div>
 
                 <div className="logo_line_1">

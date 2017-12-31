@@ -20,7 +20,7 @@ class HomePageDescriptionComponent extends React.Component {
     render (){
         return (
             <div className={'home-page-desc'}>
-                this is some sample text
+                HOLY SHIT!! IT WORKED
             </div>
         );
     }
