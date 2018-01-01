@@ -20,7 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://http://jadelectronicarts.com:3001",
+  "proxy": "http://jadelectronicarts.com:3001",
   "homepage": ".",
   "devDependencies": {
     "gulp-changed": "^3.1.1",

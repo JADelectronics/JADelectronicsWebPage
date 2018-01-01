@@ -12,7 +12,7 @@ class BrainPage extends Component {
             <Header/>
             <div className="under-construction">
                 <br/><br/>Brain page is currently under construction<br/>
-                <img src="http://http://jadelectronicarts.com:3001/images/getUnderConstruction" className={"img-center"}></img>
+                <img src="http://jadelectronicarts.com:3001/images/getUnderConstruction" className={"img-center"}></img>
             </div>
             <Footer/>
         </div>

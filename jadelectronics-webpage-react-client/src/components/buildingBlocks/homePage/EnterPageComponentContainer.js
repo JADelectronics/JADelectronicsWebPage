@@ -21,14 +21,14 @@ class EnterPageComponentContainer extends React.Component {
                     titleText={"Enter Brain"}
                     description={"Brain Learnings"}
                     imageName={"BrainImage"}
-                    imageUrl={"http://http://jadelectronicarts.com:3001/images/getBrainThumbnail"}
+                    imageUrl={"http://jadelectronicarts.com:3001/images/getBrainThumbnail"}
                     link={"/Brain"}
                 />
                 <EnterPageComponent
                     titleText={"Enter Body"}
                     description={"Body Learnings"}
                     imageName={"BodyImage"}
-                    imageUrl={"http://http://jadelectronicarts.com:3001/images/getBodyThumbnail"}
+                    imageUrl={"http://jadelectronicarts.com:3001/images/getBodyThumbnail"}
                     link={"/Body"}
                 />
             </div>
