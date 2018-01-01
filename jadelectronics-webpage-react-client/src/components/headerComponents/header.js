@@ -82,7 +82,7 @@ class Header extends React.Component {
                 </div>
 
                 <div className="logo_line_1">
-                    So what...
+                    So the fuck what...
                 </div>
                 <div className="logo_line_2">
                     ...Do it anyway
@@ -164,7 +164,7 @@ class Header extends React.Component {
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className={"resume-modal-body"}>
-                        <embed src="http://ec2-34-229-196-51.compute-1.amazonaws.com:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
+                        <embed src="http://localhost:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
                     </Modal.Body>
                     <Modal.Footer className={"resume-modal-footer"}>
                         <Button onClick={this.closeResumeModal}>Close</Button>
@@ -189,8 +189,10 @@ class Header extends React.Component {
                         <Modal.Title>About Me</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className={"about-me-modal-body"}>
-                        <p className={"text-right"}>put a little bio here</p>
-                        <img src="http://ec2-34-229-196-51.compute-1.amazonaws.com:3001/images/getCatThumbnail" className={"img-left"}></img>
+                        <p className={"text-right"}>
+                            Hello World <br/>bio coming soon
+                        </p>
+                        <img src="http://localhost:3001/images/getCatThumbnail" className={"image-float-left"}></img>
                     </Modal.Body>
                     <Modal.Footer className={"about-me-modal-footer"}>
                         <Button onClick={this.closeAboutMeModal}>Close</Button>

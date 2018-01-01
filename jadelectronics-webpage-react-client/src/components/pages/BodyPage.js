@@ -11,7 +11,8 @@ class BodyPage extends Component {
         <div>
             <Header/>
             <div className="under-construction">
-                Body page is currently under construction
+                <br/><br/>Body page is currently under construction<br/>
+                <img src="http://localhost:3001/images/getUnderConstruction" className={"img-center"}></img>
             </div>
             <Footer/>
         </div>

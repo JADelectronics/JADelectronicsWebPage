@@ -82,7 +82,7 @@ header{
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom:0;
     height: 150px;
 
@@ -267,12 +267,13 @@ body{
     text-align: center;
     height: 350px;
 
-  .img-left{
+  .image-float-left{
     float: left;
   }
 
   .text-right{
     float:right;
+      text-align: right;
   }
     a{
         font-size: 19px;
@@ -329,19 +330,7 @@ body{
     text-align: center;
 }
 
-.home-page-desc{
-    position: relative;
-    width: 100%;
-    height: 200px;
-    line-height: 200px;
 
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-
-    background: black;
-    color: $white;
-}
 
 .enter-page-container{
     position: relative;
@@ -417,10 +406,36 @@ body{
 .under-construction{
     position: relative;
 
-    height: 200px;
-    line-height: 200px;
+    height: 400px;
+    line-height: 50px;
     text-align: center;
     vertical-align: middle;
 
     background-color: black;
+}
+.text-wrap {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    overflow: auto;
+
+}
+
+.home-page-desc{
+    position: relative;
+    width: 70%;
+    height: 500px;
+    line-height: 20px;
+    overflow: auto;
+
+
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+    background: black;
+    color: $white;
+
+    margin-left: 15%;
+    margin-right:15%;
 }
