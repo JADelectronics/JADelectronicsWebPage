@@ -164,7 +164,7 @@ class Header extends React.Component {
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className={"resume-modal-body"}>
-                        <embed src="http://localhost:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
+                        <embed src="http://http://jadelectronicarts.com:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
                     </Modal.Body>
                     <Modal.Footer className={"resume-modal-footer"}>
                         <Button onClick={this.closeResumeModal}>Close</Button>
@@ -192,7 +192,7 @@ class Header extends React.Component {
                         <p className={"text-right"}>
                             Hello World <br/>bio coming soon
                         </p>
-                        <img src="http://localhost:3001/images/getCatThumbnail" className={"image-float-left"}></img>
+                        <img src="http://http://jadelectronicarts.com:3001/images/getCatThumbnail" className={"image-float-left"}></img>
                     </Modal.Body>
                     <Modal.Footer className={"about-me-modal-footer"}>
                         <Button onClick={this.closeAboutMeModal}>Close</Button>

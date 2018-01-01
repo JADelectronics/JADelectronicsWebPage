@@ -59,7 +59,7 @@ class Footer extends React.Component {
 
                 </div>
                 <div className={"img-center"}>
-                    <img src="http://localhost:3001/images/getLogoThumbnail" className={"img-center"}></img>
+                    <img src="http://http://jadelectronicarts.com:3001/images/getLogoThumbnail" className={"img-center"}></img>
                 </div>
 
                 <nav>
@@ -81,7 +81,7 @@ class Footer extends React.Component {
                         <Modal.Title>Resume</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className={"resume-modal-body"}>
-                        <embed src="http://localhost:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
+                        <embed src="http://http://jadelectronicarts.com:3001/documents/getResume" frameborder="0" width="100%" height="400px"></embed>
                     </Modal.Body>
                     <Modal.Footer className={"resume-modal-footer"}>
                         <Button onClick={this.closeResumeModal}>Close</Button>
@@ -94,7 +94,7 @@ class Footer extends React.Component {
                     </Modal.Header>
                     <Modal.Body className={"about-me-modal-body"}>
                         <p className={"text-right"}>put a little bio here</p>
-                        <img src="http://localhost:3001/images/getCatThumbnail" className={"img-left"}></img>
+                        <img src="http://http://jadelectronicarts.com:3001/images/getCatThumbnail" className={"img-left"}></img>
                     </Modal.Body>
                     <Modal.Footer className={"about-me-modal-footer"}>
                         <Button onClick={this.closeAboutMeModal}>Close</Button>
